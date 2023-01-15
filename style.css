@@ -219,6 +219,7 @@ padding-top:45px;
 .fact:hover{
     transform: rotate(360deg);
      transition-duration: 2s;
+     background-color: aqua;
 }
 .bold2{
     font-family: 'Work Sans';
