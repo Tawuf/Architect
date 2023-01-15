@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .nav1{
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -19,7 +20,7 @@
     font-size: 45px;
     padding-left: 228px;
     padding-top: 50px;
-
+  
 }
 .nav2{
         font-family: 'Work Sans';
@@ -33,7 +34,7 @@
         justify-content: space-around;
         gap: 24px;
 }
-
+/* architech portion */
 .Architech >h3{
     font-family: 'Work Sans';
     font-style: normal;
@@ -54,6 +55,15 @@
 .Architech{
     /* margin: 205px 529px 20px; */
     text-align: center;
+}
+.Arc-description{
+    font-weight: 400;
+   font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+
+color: #727272;
 }
 .btn1{
     width: 180px;
@@ -81,6 +91,7 @@
     height: 342px ;
     
 }
+/* quick over view portion */
 .Quick-List{
     display: flex;
 }
@@ -206,7 +217,8 @@ text-align: center;
 padding-top:45px;
 }
 .fact:hover{
-    transform: rotate(90deg);
+    transform: rotate(360deg);
+     transition-duration: 2s;
 }
 .bold2{
     font-family: 'Work Sans';
@@ -217,6 +229,7 @@ padding-top:45px;
     color: #131313;
 
 }
+/* sponsor list style starts here */
 .sponsor{
     text-align: center;
     margin-top: 180px;
@@ -235,9 +248,18 @@ padding-top:45px;
 }
 
 .sp1{
-    filter: brightness(0%);
+    filter: grayscale(100%);
 
 }
+.recent-project{
+    display: flex;
+    margin: 240px;
+}
+.pimg{
+    height: 200px;
+    width:200px;
+}
+/* footer style starts here */
 .footer{
     margin: 130px 240px 446px;
     width: 1440px;
@@ -249,4 +271,141 @@ padding-top:45px;
     border-radius: 8px;
     text-align: center;
     padding-top: 50px;
+}
+/* responsive mode start here */
+@media screen  and (max-width: 688px){
+    .navbar{
+        flex-direction: column;
+        
+        
+    }
+    .nav1{
+        text-align: left;
+        padding-left: 120px;
+        font-weight: 500;
+        font-size: 25px;
+
+    }
+    .nav2{
+        flex-direction: column;
+        padding-left: 200px;
+        text-align:left;
+    }
+    .Architech{
+        text-align: left;
+       
+
+    }
+    .Architech >h3{
+        text-align: left;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 35px;
+        margin-left: 120px;
+        
+
+    }
+    .Architech >p{
+       
+            text-align: left;
+            font-size: 5px;
+            
+    
+    }
+    .btn1{
+        margin-left: 120px;
+
+    }
+    .Arch-img{
+        width: 350px;
+        height: 250px;
+        margin-left: 20px;
+   
+
+    }
+    .Quick-List{
+        flex-direction: column;
+    }
+    .list-text{
+       
+    
+    
+        margin:0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    }
+    .list-img{
+        width: 43%;
+        margin-top: 85px ;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        
+    
+       
+      
+    }
+    .features{
+        margin-left: 0;
+        width:330px;
+        
+        
+    }
+    .features-container{
+        flex-direction: column;
+
+    }
+    .feature-image{
+        background-image: url("images/architect.png");
+        background-repeat: no-repeat;
+        width: 400px;
+        margin-left: 0;
+       
+        margin-top: 0;
+
+    
+        background-size: 400px;
+
+        
+    }
+    .btn-2{
+        margin-top:600px;
+    }
+    
+    .feature-title{
+        font-size: 25px;
+    }
+    .box{
+        width: 350px;
+        
+    }
+    .Some-Facts{
+        margin-left:20px;
+
+    }
+    .fact-box{
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .sponsor-img{
+        display: flex;
+        flex-direction: column;
+        gap:55px;
+        margin-left: 2%;
+        margin-right:0 ;}
+    .recent-project{
+        flex-direction: column;
+        margin: 0;
+        margin-top: 50px;
+
+        }
+        .footer{
+           margin-left: 30px;
+            width: 340px;
+            height: 100px;
+
+          
+        
+        }
 }
